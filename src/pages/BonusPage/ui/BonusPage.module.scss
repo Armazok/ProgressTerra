@@ -7,7 +7,7 @@
 
 .background {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +30,6 @@
 
 .bonusInfo {
   display: flex;
-
-  //max-width: 220px;
 }
 
 .bonusCount {
@@ -54,4 +52,14 @@
   display: flex;
   align-items: center;
   color: #979797;
+}
+
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  color: #1e6cd2;
+  font-size: 35px;
 }

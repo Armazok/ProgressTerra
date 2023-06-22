@@ -1,7 +1,7 @@
 import React, {Suspense} from 'react';
 import {Route, Routes} from "react-router-dom";
 import {routeConfig} from "shared/config/routeConfig/RouteConfig";
-
+import classes from './AppRouter.module.scss'
 export const AppRouter = () => (
     <Routes>
         {Object.values(routeConfig).map(({ element, path }) => (
@@ -9,7 +9,7 @@ export const AppRouter = () => (
                 key={path}
                 path={path}
                 element={(
-                    <Suspense fallback={<div>Loader...</div>}>
+                    <Suspense fallback={<div className={classes.loader}>Loader...</div>}>
                         <div>
                             {element}
                         </div>
