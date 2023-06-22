@@ -9,7 +9,7 @@ import {formatDate} from "utils/formatDate";
 const BonusPage = () => {
     const { data: accessTokenData, isLoading: tokenLoader } = useCreateAccessTokenQuery();
     const accessToken = accessTokenData?.accessToken;
-    const { data: infoBonusData, isLoading: bonusLoader } = useGiveInfoBonusQuery(accessToken);
+    const { data: infoBonusData } = useGiveInfoBonusQuery(accessToken);
 
     if (tokenLoader) {
         return <div className={classes.loader}>Отправляется запрос в космос...</div>
@@ -25,21 +25,26 @@ const BonusPage = () => {
     return (
         <section className={classes.container}>
             <div className={classes.background}>
-                <div className={classes.hat}>
-                    Логотип
-                    <InfoIcon />
-                </div>
-                {data && <div className={classes.infoWindow}>
-                    <div className={classes.bonusInfo}>
-                        <p className={classes.bonusCount}>{currentQuantity}</p>
-                        <p className={classes.expireInfo}>
-                            {formattedDate} сгорит
-                            <FireIcon width={'13'} height={'17'}/>
-                            {forBurningQuantity} бонусов
-                        </p>
+                {data && (
+                    <div className={classes.wrapper}>
+                        <div className={classes.hat}>
+                            <span className={classes.textLogo}>Логотип</span>
+                            <InfoIcon />
+                        </div>
+                        <div className={classes.infoWindow}>
+                            <div className={classes.bonusInfo}>
+                                <p className={classes.bonusCount}>{currentQuantity} бонусов</p>
+                                <p className={classes.expireInfo}>
+                                    {formattedDate} сгорит
+                                    <FireIcon width={'13'} height={'17'}/>
+                                    {forBurningQuantity} бонусов
+                                </p>
+                            </div>
+                            <ArrowIcon/>
+                        </div>
                     </div>
-                    <ArrowIcon/>
-                </div>}
+                )}
+
             </div>
         </section>
     );
