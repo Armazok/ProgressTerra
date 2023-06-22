@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+.hat {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.infoWindow {
+  background: #FFFFFF;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.bonusInfo {
+  display: flex;
+
+  //max-width: 220px;
+}
+
+.bonusCount {
+  font-family: 'Open Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.expireInfo {
+  font-family: 'Open Sans', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979797;
+}
