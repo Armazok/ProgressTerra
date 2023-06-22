@@ -1,6 +1,6 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {generateTokenAPI} from "api/generateToken/generateToken";
-import {bonusClientAPI} from "api/infoBonus/infoBonus";
+import {generateTokenAPI} from "api/generateTokenApi/generateToken";
+import {bonusClientAPI} from "api/infoBonusApi/infoBonus";
 
 export const store = configureStore({
     reducer: {

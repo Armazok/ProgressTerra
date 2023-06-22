@@ -2,8 +2,8 @@ import classes from './BonusPage.module.scss';
 import ArrowIcon from '../../../assets/icon/arrow.svg';
 import FireIcon from '../../../assets/icon/fire.svg';
 import InfoIcon from '../../../assets/icon/information.svg';
-import { useCreateAccessTokenQuery } from 'api/generateToken/generateToken';
-import { useGiveInfoBonusQuery } from 'api/infoBonus/infoBonus';
+import { useCreateAccessTokenQuery } from 'api/generateTokenApi/generateToken';
+import { useGiveInfoBonusQuery } from 'api/infoBonusApi/infoBonus';
 import {formatDate} from "utils/formatDate";
 
 const BonusPage = () => {
@@ -44,7 +44,6 @@ const BonusPage = () => {
                         </div>
                     </div>
                 )}
-
             </div>
         </section>
     );

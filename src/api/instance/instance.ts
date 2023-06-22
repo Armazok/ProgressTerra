@@ -1,5 +1,5 @@
 import { fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
-import { configKey } from "api/configKey";
+import { configKey } from "api/keys/configKey";
 
 const { accessKey } = configKey;
 

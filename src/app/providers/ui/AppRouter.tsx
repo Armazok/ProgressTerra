@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react';
+import {Suspense} from 'react';
 import {Route, Routes} from "react-router-dom";
 import {routeConfig} from "shared/config/routeConfig/RouteConfig";
 import classes from './AppRouter.module.scss'
@@ -9,7 +9,7 @@ export const AppRouter = () => (
                 key={path}
                 path={path}
                 element={(
-                    <Suspense fallback={<div className={classes.loader}>Loader...</div>}>
+                    <Suspense fallback={<div className={classes.loader}>Lazy Loader...</div>}>
                         <div>
                             {element}
                         </div>

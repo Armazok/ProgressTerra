@@ -1,7 +1,7 @@
 import { createApi} from '@reduxjs/toolkit/query/react'
 import {IGenerateTokenResponse} from "../typesAPI";
-import {configKey} from "api/configKey";
-import {baseQueryGenerate} from "api/instance";
+import {configKey} from "api/keys/configKey";
+import {baseQueryGenerate} from "api/instance/instance";
 
 const {paramValue, idClient} = configKey
 

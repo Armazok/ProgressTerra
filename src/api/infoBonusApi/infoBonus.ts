@@ -1,6 +1,6 @@
 import {createApi} from "@reduxjs/toolkit/dist/query/react";
 import {IInfoBonusResponse} from "api/typesAPI";
-import {baseQueryInfoBonus} from "api/instance";
+import {baseQueryInfoBonus} from "api/instance/instance";
 
 
 export const bonusClientAPI = createApi({
