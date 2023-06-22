@@ -1,10 +1,9 @@
-import React from 'react';
-
+import classes from './MainPage.module.scss'
 const MainPage = () => {
     return (
-        <div>
-            Main Page
-        </div>
+        <main className={classes.main}>
+            Главная страница
+        </main>
     );
 };
 

@@ -9,7 +9,7 @@ const App = () => {
         <div className={classNames('app', {}, [])}>
             <Header>
                 <Link to={'/'}>Главная</Link>
-                <Link to={'/bonus'}>Бонусы</Link>
+                <Link to={'/bonus'}>Мои бонусы</Link>
             </Header>
             <AppRouter/>
         </div>
